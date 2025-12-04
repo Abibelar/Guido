@@ -1,9 +1,9 @@
-import LessonOverview from '../components/LessonOverview'
+import LessonOverview from "../components/LessonOverview";
 
 function App() {
   return (
-    <LessonOverview/>
-  )
+        <LessonOverview />
+  );
 }
 
-export default App
+export default App;

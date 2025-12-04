@@ -6,24 +6,27 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router-dom";
 import LessonPage from "./pages/LessonPage.jsx";
 import PracticePage from "./pages/PracticePage.jsx";
+import Layout from "./pages/Layout.jsx";
 
 const router = createBrowserRouter([
+  {Component: Layout, children: [
   {
-    path: "/",
-    Component: <App />,
-  },
-  {
-    path: "/lesson/:lessonId",
-    Component: <LessonPage />,
-  },
-  {
-    path: "/practice",
-    Component: <PracticePage />,
-  },
-]);
 
-createRoot(document.getElementById("root")).render(
+    path: "/",
+    Component: App,
+  },
+  {
+    path: "lesson/:lessonId",
+    Component: LessonPage,
+  },
+  {
+    path: "practice",
+    Component: PracticePage,
+  },
+]}]);
+
+createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>
+  </StrictMode>,
 );

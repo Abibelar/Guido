@@ -14,7 +14,7 @@ export default function LessonOverview(lessons) {
           description="Introduction to guitar"
         />
       </div> */}
-      <div className="flex flex-col items-center w-5/12">
+      <div className="flex flex-col items-center w-7/12">
         {lessons.map((chapter, index) => (
           <Chapter
             key={index}
@@ -24,7 +24,7 @@ export default function LessonOverview(lessons) {
           />
         ))}
       </div>
-      <div>
+      <div className="w-5/12">
         {selectedLesson && (
           <LessonDescription
             number={selectedLesson.number}
