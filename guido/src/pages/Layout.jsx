@@ -5,9 +5,9 @@ export default function Layout() {
   return (
     <div className="flex h-screen">
       <Navbar />
-        <main className="flex-1 p-4">
-      <Outlet />
-        </main>
+      <main className="flex-1 p-4 ml-65">
+        <Outlet />
+      </main>
     </div>
   );
 }
