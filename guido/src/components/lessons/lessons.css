@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+p{
+    @apply text-gray-800;
+}
+
+button{
+    @apply rounded-lg p-3 mx-5;
+}
